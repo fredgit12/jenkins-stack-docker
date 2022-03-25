@@ -7,8 +7,8 @@ services:
     environment:
       - "DOCKER_HOST=tcp://docker:2376"
       - "DOCKER_TLS_VERIFY=1"
-      - "TZ=Asia/Tehran"
-      - "JAVA_OPTS=-Duser.timezone=Asia/Tehran"
+      - "TZ=Europe/Stockholm"
+      - "JAVA_OPTS=-Duser.timezone=Europe/Stockholm"
     volumes:
       - "jenkins_data:/var/jenkins_home"
       - "docker_certs_client:/var/jenkins_home/.docker"
@@ -62,7 +62,7 @@ services:
     image: gitea/gitea:1.14
     restart: unless-stopped
     environment:
-      - "TZ=Asia/Tehran"
+      - "TZ=Europe/Stockholm"
     volumes:
       - "gitea_data:/data"
     ports:

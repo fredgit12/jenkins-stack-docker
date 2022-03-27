@@ -2,7 +2,7 @@ version: !!str 3
 
 services:
   jenkins:
-    image: jenkins/jenkins:lts-jdk11
+    image: karl2022/jenkins:latest
     restart: unless-stopped
     environment:
       - "DOCKER_HOST=tcp://docker:2376"
